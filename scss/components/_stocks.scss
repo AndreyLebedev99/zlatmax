@@ -1,0 +1,32 @@
+.stocks-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	row-gap: 60px;
+}
+.stocks-title {
+	font-size: 30px;
+}
+.stocks-more {
+	padding: 0px 25px 0px 0px;
+	
+	color: rgba(20, 20, 20, 0.58);
+	transition: .3 color;
+
+	position: relative;
+	
+		&::before {
+			content: '›';
+			position: absolute;
+			top: 13px;
+			transform: translateY(-50%);
+			right: 0;
+			font-size: 27px;
+			color: $yellow;
+		}
+
+		&:hover {
+			color: $yellow;
+		}
+}

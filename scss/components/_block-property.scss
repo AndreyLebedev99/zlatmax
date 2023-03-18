@@ -1,0 +1,41 @@
+.block-information-body2 {
+}
+.block-property {
+	display: flex;
+	column-gap: 100px;
+}
+.block-property-column {
+	position: relative;
+		&__title {
+			margin: 0px 0px 30px 0px;
+			
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+		}
+
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			column-gap: 30px;
+		}
+
+		&__item-value {
+			color: $grey;
+		}
+
+		&:not(:last-child)::before {
+			content: '';
+			position: absolute;
+			right: -50px;
+			top: 30px;
+			height: 100%;
+			
+			border-left: 1px solid $grey;
+		}
+}

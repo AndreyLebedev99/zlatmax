@@ -1,0 +1,30 @@
+.pages-way {
+	margin: 30px 0px;
+}
+.list-way {
+	display: flex;
+	column-gap: 16px;
+}
+.page-back {
+	color: $grey;
+
+		&:not(:first-child) {
+			padding: 0px 0px 0px 22px;
+		}
+}
+.page-way--active {
+	color: $yellow;
+}
+.page-way-arrow{
+	position: relative;
+
+		&::before {
+			content: '›';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-53%);
+			left: 0;
+			font-size: 27px;
+			color: $grey;
+		}
+}

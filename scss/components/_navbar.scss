@@ -1,0 +1,40 @@
+.nav {
+	background-color: $black;
+
+		& a {
+			color: $white;
+		}
+}
+.nav-row {
+	padding: 25px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-list {
+	display: flex;
+	column-gap: 60px;
+
+	font-size: 16px;
+}
+.nav-link {
+	& a:hover {
+		color: $yellow;
+	}
+}
+.login-link {
+	position: relative;
+	font-weight: 600;
+
+		&:hover {
+			color: $yellow;
+		}
+
+		&::before {
+			content: url(./../img/icons/navbar/singin.svg);
+			position: absolute;
+			left: -36px;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 30px;
+		}
+}

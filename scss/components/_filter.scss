@@ -1,0 +1,107 @@
+.filter {
+	width: 375px;
+	margin: 0px 30px 0px 0px;
+	
+}
+.filter-title {
+	padding: 23px 30px;
+}
+.filter-title-black{
+	background-color: $black;
+	color: $white;
+}
+.filter-accordion {
+}
+.acor-body {
+	display: none;
+
+		&--active {
+			display: block;
+		}
+}
+
+.filter-accordion-title {
+	width: 375px;
+	display: block;
+	position: relative;
+
+	padding: 13px 30px;
+	background-color: $black;
+	color: $white;
+
+	position: relative;
+
+	cursor: pointer;
+
+		&::before {
+			content: '›';
+			position: absolute;
+			top: 7px;
+			right: 30px;
+			font-size: 27px;
+
+			transform: rotate(90deg);
+
+			transition: .3s all;
+		}
+
+		&--active::before {
+			transform: rotate(-90deg);
+			right: 33px;
+			color: $yellow;
+		}
+
+}
+
+.filter-items {
+	padding: 21px 30px 30px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 21px;
+
+	background-color: $white;
+}
+.filter-item {
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+}
+
+.filter-value {
+	font-size: 16px;
+}
+.filter-val-input{
+	z-index: -1;
+	opacity: 0;
+	display: none;
+
+		&:checked + .filter-val-label::before {
+			border-color: $yellow;
+			padding: 1px;
+			background-color: $yellow;
+		  
+		}
+}
+.filter-val-label{
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+
+			border: 1px solid $grey;
+			border-radius: 2px;
+		}
+}
+.number {
+	font-size: 16px;
+	color: $yellow;
+}
+
+.rating {
+	font-size: 16px;
+}

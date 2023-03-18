@@ -1,0 +1,131 @@
+@import "_reset";
+@import "_fonts";
+@import "_vars";
+
+html, body {
+	min-height: 100vh;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.6;
+	
+	display: flex;
+	flex-direction: column;
+	
+	background-color: $bg;
+}
+
+a {
+	color: $black;
+	transition: color .3s ease-in;
+}
+
+/*---------------- General */
+
+.container {
+	margin: 0 auto;
+
+	width: 1590px;
+}
+
+.swiper {
+	padding: 0px 10px 60px;
+	
+	width: 100%;
+}
+
+.margin-b120 {
+	margin: 0px 0px 120px 0px;
+	
+}
+
+.title-h2 {
+	margin: 0px 0px 30px 0px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.none {
+	display: none
+}
+
+/*---------------- NavBar  */
+
+@import "./components/_navbar";
+
+/*---------------- Header */
+
+@import "./components/_header";
+
+/*---------------- Menu */
+
+@import "./components/_menu";
+
+/*---------------- Slider */
+
+@import "./components/_slider";
+
+/*---------------- Catalog */
+
+@import "./components/_catalog";
+
+/*---------------- Knives swiper */
+
+@import "./components/_knives-swiper";
+
+/*---------------- New */
+
+@import "./components/_new";
+
+/*---------------- Stocks */
+
+@import "./components/_stocks";
+
+/*---------------- News */
+
+@import "./components/_news";
+
+/*---------------- Catalog page title */
+
+@import "./components/_catalog-page-title";
+
+/*---------------- Page way */
+
+@import "./components/_pages-way";
+
+/*---------------- Choice */
+
+@import "./components/_choice";
+
+/*---------------- Filter */
+
+@import "./components/_filter";
+
+/*---------------- Polzunok */
+
+@import "./components/_polzunok";
+
+/*---------------- Knive */
+
+@import "./components/_knive";
+
+/*---------------- Block information */
+
+@import "./components/_block-iformation";
+
+/*---------------- Block property */
+
+@import "./components/_block-property";
+
+/*---------------- Block reviews */
+
+@import "./components/_block-reviews";
+
+/*---------------- Zlat */
+
+@import "./components/_zlat";
+
+/*---------------- Footer */
+
+@import "./components/_footer";

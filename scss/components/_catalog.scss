@@ -1,0 +1,126 @@
+.catalog {
+	margin: 100px 0px 0px 0px;
+}
+.catalog-list {
+	margin: 0px 0px 120px 0px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 33px;
+}
+.catalog-item {
+	padding: 30px 30px 60px;
+	width: 510px;
+
+	background-color: $white;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+	position: relative;
+	overflow: hidden;
+
+	cursor: pointer;
+
+		&::before{
+			content: '';
+			background-repeat: no-repeat;
+			position: absolute;
+			height: 100%;
+			width: 44%;
+			right: 0;
+			top: 30px;
+		}
+
+}
+
+.catalog-item1::before{
+	background-image: url(./../../img/catalog/knive1.png);	
+}
+.catalog-item2::before{
+	background-image: url(./../../img/catalog/knive2.png);	
+	width: 50%;
+}
+.catalog-item3::before{
+	background-image: url(./../../img/catalog/knive3.png);	
+	width: 65%;
+	top: 37px;
+}
+.catalog-item4::before{
+	background-image: url(./../../img/catalog/knive4.png);	
+	width: 45%;
+}
+.catalog-item5::before{
+	background-image: url(./../../img/catalog/knive5.png);	
+	width: 50%;
+	top: 40px;
+}
+.catalog-item6::before{
+	background-image: url(./../../img/catalog/knive6.png);	
+	width: 67%;
+	top: 0;
+}
+
+.catalog-title {
+	padding: 0px 0px 15px 0px;
+
+	font-size: 24px;
+	font-weight: 600;
+
+	position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			border-bottom: $yellow 2px solid;
+			width: 68px;
+		}
+}
+.catalog-text {
+	padding: 30px 0px 0px 0px;
+	
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	
+		& li {
+			position: relative;
+			left: 17px;
+
+			list-style-type: disc;
+			line-height: 1.8;
+
+				&::marker {
+					color: $yellow;
+				}
+		}
+}
+
+.catalog-follow {
+	padding: 0px 25px 0px 0px;
+
+	text-align: end;
+	font-weight: 600;
+	color: rgba(20, 20, 20, 0.58);
+	transition: .3s color;
+	
+	position: relative;
+	
+	cursor: pointer;
+	
+		&::before {
+			content: '›';
+			position: absolute;
+			top: 13px;
+			transform: translateY(-50%);
+			right: 0;
+			
+			font-size: 27px;
+			color: $yellow;
+		}
+
+		&:hover {
+			color: $yellow;
+		}
+}
