@@ -426,7 +426,7 @@ a {
 
 /*---------------- Slider */
 .slider {
-  background-image: url(./../../img/slider/bg.jpg);
+  background-image: url(./../img/slider/bg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -444,7 +444,7 @@ a {
 
 .slider-wrapper {
   padding: 44px 0 63px;
-  background-image: url(./../../img/slider/bg-mask.png);
+  background-image: url(./../img/slider/bg-mask.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #fff;
@@ -559,33 +559,33 @@ a {
 }
 
 .catalog-item1::before {
-  background-image: url(./../../img/catalog/knive1.png);
+  background-image: url(./../img/catalog/knive1.png);
 }
 
 .catalog-item2::before {
-  background-image: url(./../../img/catalog/knive2.png);
+  background-image: url(./../img/catalog/knive2.png);
   width: 50%;
 }
 
 .catalog-item3::before {
-  background-image: url(./../../img/catalog/knive3.png);
+  background-image: url(./../img/catalog/knive3.png);
   width: 65%;
   top: 37px;
 }
 
 .catalog-item4::before {
-  background-image: url(./../../img/catalog/knive4.png);
+  background-image: url(./../img/catalog/knive4.png);
   width: 45%;
 }
 
 .catalog-item5::before {
-  background-image: url(./../../img/catalog/knive5.png);
+  background-image: url(./../img/catalog/knive5.png);
   width: 50%;
   top: 40px;
 }
 
 .catalog-item6::before {
-  background-image: url(./../../img/catalog/knive6.png);
+  background-image: url(./../img/catalog/knive6.png);
   width: 67%;
   top: 0;
 }
